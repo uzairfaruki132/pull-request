@@ -83,6 +83,7 @@ COMMAND="hub pull-request \
   || true"
 
 echo "$COMMAND"
+echo "$COMMAND"
 
 PR_URL=$(sh -c "$COMMAND")
 if [[ "$?" != "0" ]]; then

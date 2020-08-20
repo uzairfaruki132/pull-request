@@ -43,10 +43,11 @@ inputs:
     description: GitHub token secret
     required: true
 outputs:
+  pr_number:
+    description: 'Pull request number'
   pr_url:
     description: 'Pull request URL'
-  pr_number:
-    description: 'Pull request number'  
+    
 runs:
   using: 'docker'
   image: 'Dockerfile'
